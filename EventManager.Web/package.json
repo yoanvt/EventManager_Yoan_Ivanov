@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "event-manager",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.4.0",
+    "gulp-watch-less": "^1.0.1"
+  }
+}

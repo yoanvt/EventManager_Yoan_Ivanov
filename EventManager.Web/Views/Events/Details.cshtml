@@ -1,0 +1,42 @@
+﻿@model EventManager.Data.Models.Event
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDateTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StartDateTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDateTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EndDateTime)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="buttonlink" asp-action="Edit" asp-route-id="@Model.Id">Edit</a> 
+    <a  class="buttonlink"asp-action="Index">Back to List</a>
+</div>
